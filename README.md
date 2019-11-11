@@ -1,5 +1,9 @@
 ### 用法
 ```
+import os
+
+from google import GoogleSpider
+
 def sqlmqp_google():
     with open('google.txt', 'r') as f:
         urls = f.read().split('\n')
